@@ -138,10 +138,21 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    // var result = multiply(testDynamicArray[0],testDynamicArray[1])[0];
+    // var result2 = multiply(result,testDynamicArray[2])[0];
+    // var result3 = multiply(result2,testArray[3])[0];
+    // var finalResult = multiply(result3,testArray[4])[0]; 
+    var dynamicArray= 1; 
+        for (var i = 0; i < testDynamicArray.length; i++)  {
+            var result = multiply(result * testDynamicArray[i])[0];
+        }
+        var string = `The numbers ${testDynamicArray[0]},${testDynamicArray[1]},${testDynamicArray[2]},${testDynamicArray[3]},${testDynamicArray[4]} have a product of ${dynamicArray}.`
+        console.log(string)
+        return(dynamicArray,string);
+    
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+ testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
