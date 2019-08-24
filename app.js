@@ -146,7 +146,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     // var finalResult = multiply(result3,testArray[4])[0]; 
     var dynamicArray= 1; 
         for (var i = 0; i < testDynamicArray.length; i++)  {
-            var result = multiply(result * testDynamicArray[i])[0];
+            dynamicArray = multiply(result * testDynamicArray[i])[0];
         }
         var string = `The numbers ${testDynamicArray[0]},${testDynamicArray[1]},${testDynamicArray[2]},${testDynamicArray[3]},${testDynamicArray[4]} have a product of ${dynamicArray}.`
         console.log(string)
